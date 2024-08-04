@@ -24,7 +24,7 @@ public class EntityAttributeInstanceMixin {
 	)
 	private void injectAtGetBaseValue(CallbackInfoReturnable<Double> cir) {
 		if (type instanceof DynamicEntityAttribute) {
-			cir.setReturnValue(0);
+			cir.setReturnValue((double) 0);
 		}
 	}
 
@@ -35,7 +35,7 @@ public class EntityAttributeInstanceMixin {
 	)
 	private void injectAtComputeValue(CallbackInfoReturnable<Double> cir) {
 		if (type instanceof DynamicEntityAttribute) {
-			cir.setReturnValue(0);
+			cir.setReturnValue((double) 0);
 		}
 	}
 
